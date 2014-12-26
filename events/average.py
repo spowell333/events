@@ -1,14 +1,15 @@
 # Averaging class
 
+class Average:
+  def __init__(self):
+    self.xs = []
 
 
-xs = []
+  def add_sample(self, x) :
+    self.xs.append(x)
 
 
+  def calculate(self):
+    return sum(self.xs) / len(self.xs)
 
-def add_sample(x) :
-  xs.append(x)
 
-
-def calculate():
-  reduce(lambda x, y: x+y, xs) / xs.count()
